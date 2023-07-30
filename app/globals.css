@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+.bodyItem{
+  @apply bg-black text-white;
+}
+.landing {
+    @apply  rounded-2xl ; box-shadow:inset 0px 0px 100px 10px rgba(10, 1222, 353, 0.3),0px 0px 100px 10px rgba(-10, -1222, -353, 0.3) ;
+      }
+.image_shadow{
+  filter:drop-shadow(10px 10px 100px #fff)
+}
+
+.shadows{
+  box-shadow:inset 0px 0px 100px 10px rgba(10, 1222, 353, 0.3),0px 0px 100px 10px rgba(-10, -1222, -353, 0.3) ;
+}
+
