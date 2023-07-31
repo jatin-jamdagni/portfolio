@@ -15,7 +15,7 @@ export default function Home() {
         <About />
       </div>
 
-      <div id="project" className="top-0 pt-24">
+      <div id="projects" className="top-0 pt-24">
         <Projects />
       </div>
 
