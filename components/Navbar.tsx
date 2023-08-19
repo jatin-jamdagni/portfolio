@@ -1,45 +1,74 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { RxHamburgerMenu } from 'react-icons/rx';
-
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import Image from "next/image";
 
 const NavLinkData = [
-  { key: 1, id: "Home", link: "#home", },
+  { key: 1, id: "Home", link: "#home" },
   { key: 2, id: "About", link: "#about" },
-  { key: 3, id: "Projects", link: "#projects" },
-  { key: 4, id: "Contact", link: "#contact" }]
-
+  { key: 3, id: "Skills", link: "#skills" },
+  { key: 4, id: "Projects", link: "#projects" },
+  { key: 5, id: "Contact", link: "#contact" },
+];
 
 const NavLinks = () => {
   return (
-    <ul className="hidden md:flex md:w-1/2 md:justify-evenly">
+    <ul className="hidden md:flex gap-16">
       {NavLinkData.map((obj) => (
-        <li key={obj.key} className="shrink lg:shrink-0 uppercase font-mono font-extralight "><a href={obj.link}>{obj.id}</a></li>
+        <li
+          key={obj.key}
+          className="transition-opacity hover:opacity-100 opacity-80 uppercase text-[14px] flex items-center"
+        >
+          <a href={obj.link}>{obj.id}</a>
+        </li>
       ))}
     </ul>
-  )
-}
+  );
+};
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
+
   return (
+    <div className="border fixed top-0 z-50 w-full bg-opacity-50 backdrop-filter backdrop-blur-md">
+      <div className="flex px-6 py-3 justify-between md:justify-around">
+        <Image
+          src={"/logo.svg"}
+          alt="logo"
+          height={120}
+          width={120}
+          className="scale-150 outline hover:outline-offset-4 mix-blend-multiply
 
-    <nav className=" fixed top-0 z-10 w-full p-4 px-16 flex flex-col md:flex-row md:justify-around md:px-0 backdrop-blur-sm shadow-lg shadow-[#023434]">
-      <div className="flex justify-between md:inline" >
-        <Link href={"#home"} className='font-["Alex_Brush"]'>Jatin Sharma</Link>
-        <button type="button" onClick={() => setOpen(!open)} className="md:hidden"><RxHamburgerMenu /> </button>
+"
+        />
+        <button
+          className="block md:hidden"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          {open ? <RxCross2 /> : <RxHamburgerMenu />}
+        </button>
+        <NavLinks />
       </div>
-      <NavLinks />
-      <div className=" md:hidden">
-        {open ? <ul>
-          {NavLinkData.map((obj) => (
-            <li key={obj.key} className=" hover:bg-[#023434] bg-transparent"><a href={obj.link} onClick={() => setOpen(!open)} className="block">{obj.id}</a></li>
-          ))}
-        </ul> : ""}
-      </div>
-
-    </nav>
+      {open ? (
+        <div className="block md:hidden">
+          <ul onClick={() => setOpen(!open)} className="">
+            {NavLinkData.map((obj) => (
+              <li
+                key={obj.key}
+                className="pl-10 border-none hover:border hover:border-dotted              "
+              >
+                <a href={obj.link}>{obj.id}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
+    </div>
   );
 };
 

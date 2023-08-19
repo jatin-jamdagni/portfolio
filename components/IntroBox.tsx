@@ -1,68 +1,106 @@
 import Image from "next/image";
-import { Yatra_One } from "next/font/google";
-import Links from "./Links";
 import Link from "next/link";
-
-const yatra_one = Yatra_One({ weight: "400", subsets: ["latin"] });
-
-const HomePanel = () => {
-
-  return (
-    <div className='p-10 flex flex-col justify-center items-center relative'>
-      <Image
-        src={"/avatar.png"}
-        height={100}
-        width={100}
-        alt="Avatar"
-      />
-      <div className="">
-
-        <p className="text-[22px] md:text-[40px] ">
-          {`I'm `}
-          <span className={`text-blue-800`}>Jatin Sharma</span>,
-        </p>
-
-        <p className="p-4">
-          As a
-          <span className="text-blue-800 text-[12px]  md:text-[20px]"> Web Developer</span>,
-          I take pride in crafting user interfaces that transform ordinary
-          interactions into extraordinary experiences, fueled by my passion
-          for coding and creativity.
-        </p>
-        {/* <Link
-          className="text-blue-800 text-[32px] ml-96 shadow-lg duration-200 
-            shadow-[#023434] hover:shadow-xl hover:shadow-[#023434] "
-          target="_blank"
-          href={
-            "https://drive.google.com/file/d/1xw4Bol_bhOu54i3-7e8ugOArTqWHHHM0/view?usp=sharing"
-          }
-        >
-          Resume
-        </Link> */}
-      </div>
-
-
-
-    </div>
-  )
-}
+import React from "react";
+import Links from "./Links";
 
 const IntroBox = () => {
   return (
-    // flex flex-col mx-12 gap-6 p-20 landing relative
-    <div className={`${yatra_one.className} landing`}>
-      <HomePanel />
+    <div className="">
+      <div className=" mx-10 flex flex-col md:flex-row justify-around items-center gap-10">
+        {/* Left side Items */}
+        <div className="flex flex-col gap-7 justify-start items-start md:h-[30em] ">
+          <div className="shadow-lg hover:shadow-2xl mr-10 bg-gray-100 p-2 rounded-lg flex items-center justify-center pr-10 ">
+            <Image
+              src={"/logo_image.png"}
+              alt="logo"
+              height={100}
+              width={100}
+              className=" hover:scale-125 duration-300 object-contain"
+            />
+            <p className=' font-["Dm_sans"] text-[16px] text-gray-600'>
+              Hello, I am
+              <br />
+              <span className="text-[44px] text-black">Jatin</span>
+            </p>
+          </div>
+          <div className='shadow-lg hover:shadow-2xl ml-6 bg-gray-50 px-8 py-6 rounded-lg font-["Dm_sans"] flex gap-4 items-center w-full'>
+            <div className="rounded-full duration-200 p-6 py-8 flex justify-center shadow-blue-200 items-center shadow-2xl hover:shadow-sm active:shadow-sm">
+              <Link
+                className="text-gray-600 md:text-[32px]"
+                target="_blank"
+                href={
+                  "https://drive.google.com/file/d/1xw4Bol_bhOu54i3-7e8ugOArTqWHHHM0/view?usp=sharing"
+                }
+              >
+                Resume
+              </Link>
+            </div>
+            <p className="text-[16px] uppercase text-right text-gray-800">
+              MERN Stack Dev
+              <br />
+              Mobile App Dev
+            </p>
+          </div>
+        </div>
 
-      {/* <div className="">
-        <Links />
-        h</div> */}
+        {/* Avatar */}
+        <div className="border-b-4 border-black rounded-sm py-6">
+          <Image
+            src={"/avatar.svg"}
+            alt="avatar"
+            width={400}
+            height={400}
+            className="md:h-[30em] md:w-[30em] p-2 md:p-0 scale-125 hover:scale-100 duration-300 drop-shadow-2xl overflow-hidden"
+          />
+        </div>
 
-      {/* <Image src={"/java.svg"} alt="java" height={50} width={50} className="absolute top-56 right-32 opacity-50 drop-shadow-6xl hover:opacity-100 duration-100" />
-      <Image src={"/node.svg"} alt="node" height={50} width={50} className="absolute bottom-20 right-72 opacity-50 drop-shadow-7xl hover:opacity-100 duration-100" />
-      <Image src={"/react.svg"} alt="react" height={50} width={50} className="absolute top-28 left-[42rem] opacity-75 drop-shadow-4xl hover:opacity-100 duration-100" />
-      <Image src={"/nextjs.svg"} alt="next" height={100} width={100} className="absolute bottom-40 left-36 opacity-50 drop-shadow-5xl hover:opacity-100 duration-100" /> */}
+        {/* Right side Items */}
+        <div className="hidden md:flex justify-start items-center gap-10 h-[30em] w-[23em]  relative">
+          <div className="flex flex-col  h-full items-center justify-between">
+            <Image
+              src={"/java.svg"}
+              alt="java"
+              height={100}
+              width={100}
+              className="drop-shadow-3xl"
+            />
+            <Image
+              src={"/node.svg"}
+              alt="node"
+              height={100}
+              width={100}
+              className="drop-shadow-4xl"
+            />
+          </div>
+          <Image
+            src={"/react.svg"}
+            alt="react"
+            height={100}
+            width={100}
+            className="animate-spin drop-shadow-5xl"
+          />
+        </div>
+      </div>
+      <br />
+      <Links />
     </div>
   );
 };
 
 export default IntroBox;
+
+// #023434]
+
+// <div className='mx-10 mt-4 text-center text-[24px] font-["Josefin_Sans"] text-[#6a6363]'>
+//   As a
+//   <span className='text-[#A555EC]	 font-bold'> Web Developer</span>,
+//   <br />
+//   I take pride in crafting user interfaces that transform ordinary
+//   interactions into extraordinary experiences, fueled by my passion
+//   for coding and creativity.
+// </div>
+
+{
+  /* <p>I Know That <span className='text-blue-600'>Good Dev</span></p>
+<p>Means <span className='text-blue-600'>Good Business</span>.</p> */
+}

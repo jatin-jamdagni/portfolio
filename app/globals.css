@@ -5,20 +5,11 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+  font-size: Syyyyyy;
+  
 }
 
-.bodyItem{
-  @apply bg-black text-white;
+.contactfield {
+  @apply px-6 py-2 w-full md:w-96 rounded-md hover:shadow-md active:outline-2 active:outline-blue-600 focus:outline-blue-500 focus:outline-2 duration-300 hover:shadow-blue-200
 }
-.landing {
-    @apply  rounded-2xl ; box-shadow:inset 0px 0px 100px 10px rgba(10, 1222, 353, 0.3),0px 0px 100px 10px rgba(-10, -1222, -353, 0.3) ;
-      }
-.image_shadow{
-  filter:drop-shadow(10px 10px 100px #fff)
-}
-
-.shadows{
-  box-shadow:inset 0px 0px 100px 10px rgba(10, 1222, 353, 0.3),0px 0px 100px 10px rgba(-10, -1222, -353, 0.3) ;
-}
-

@@ -2,13 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-interface LinkObjProps {
-  id: number;
-  img: string;
-  alt: string;
-  link: string;
-
-}
 const data = [{
   id: 1,
   img: "linkedin.svg",
@@ -20,7 +13,7 @@ const data = [{
   id: 2,
   img: "github.svg",
   alt: "Github",
-  link: "https://www.linkedin.com/in/jatinjamdagni",
+  link: "https://github.com/jatin-jamdagni/",
 },
 {
   id: 3,

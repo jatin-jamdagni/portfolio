@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
+import Footer from "@/components/Footer";
+
+const inter = DM_Sans({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Jatin Sharma",
@@ -14,9 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bodyItem ">
+      <body className={inter.className}>
         <Navbar />
-        {children}</body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

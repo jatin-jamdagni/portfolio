@@ -1,49 +1,78 @@
-import React from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
+const projectsData = [
+  {
+    key: 1,
+    projectName: "Project Shop",
+    image: "/projectshop.png",
+    description: "The Project is a cutting-edge web application developed using Reactjs, Next.js 13, Tailwind CSS, TypeScript, and GraphQL. It provides users with a seamless experience for managing and showcasing their projects, while maintaining a user-friendly interface and robust functionality.",
+    liveURL: "https://project-shop-theta.vercel.app/",
+    githubURL: "https://github.com/jatin-jamdagni/Project_shop"
+  },
+  {
+    key: 2,
+    projectName: "Car Hub",
+    image: "/carhub.png",
+    description: "The 'Car Hub' is an immersive web app project built on Reactjs, Next.js 13 and combined with Tailwind CSS and TypeScript. This project aims to provide users with an exceptional online platform to explore diverse cars, diving into captivating automotive design and features via seamless dynamic search.",
+    liveURL: "https://github.com/jatin-jamdagni/car-hub",
+    githubURL: "https://github.com/jatin-jamdagni/car-hub"
+  },
+  {
+    key: 3,
+    projectName: "Migrater: Tourism Website",
+    image: "/migrater.png",
+    description: "'Migrater' is a captivating frontend tourism website meticulously crafted with JavaScript, HTML, and CSS, inviting users on a virtual journey through  enchanting landscapes and rich cultural tapestry of India. It offers an immersive exploration of the country's diverse tourist destinations.",
+    liveURL: "https://pallavidwivedi1605.github.io/MIGRATERS/",
+    githubURL: "https://github.com/jatin-jamdagni/MIGRATERS"
+  },
+
+]
+
+// const Projects = () => {
+//   return (
+//     <div className='mx-10 flex flex-col justify-center items-center gap-10'>
+//       <p className=' text-center text-[44px] font-bold'>My Creative <span className='text-[#313bac]'>Portfolio</span> Section</p>
+//       <div className='flex flex-col md:flex-row justify-center items-center gap-16 w-72 md:w-[60em]  '>
+//         {projectsData.map(obj => (
+//           <div key={obj.key} className='flex flex-col justify-center gap-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-blue-300 duration-300 shadow-blue-200 w-[300px] h-[500px]'>
+
+//             <Image src={obj.image} alt={obj.projectName} width={1902} height={1080} className='w-full h-full rounded-2xl border shadow-xl sticky' />
+
+//             <p className='px-6 text-[18px] font-medium text-slate-700 '>{obj.projectName}</p>
+//             <p className='px-6 pb-6 text-slate-800 text-justify'>{obj.description}</p>
+
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   )
+// }
 
 const Projects = () => {
   return (
-    <div id="project" className=" bg-black ">
-      lit, repellendus aut deleniti doloribus ipsa facilis
-      totam eos fugit quam doloremque, voluptas facere? Odit numquam iste
-      consequuntur aperiam. Fugit pariatur ipsam perferendis sunt quibusdam
-      optio, delectus iusto unde accusamus dolore saepe, exercitationem quidem
-      voluptatum perspiciatis deserunt rem dolorum. Repellendus repudiandae
-      iusto quis ipsam ipsa earum! Eligendi earum, quasi facilis iure facere in
-      maiores ipsa deserunt mollitia. Voluptatibus deleniti voluptas, beatae
-      labore dicta cum fugit rerum ad alias laudantium placeat quod repellendus
-      iusto autem eveniet quis minus, deserunt inventore architecto ab aliquam
-      perferendis amet nisi! Commodi cum ab ipsam quae quos neque ipsa eum sit
-      culpa tenetur quam, temporibus id, est eligendi perspiciatis minus
-      officiis voluptatibus hic expedita accusamus voluptates modi, sapiente
-      voluptatum? Omnis accusamus voluptates obcaecati facere rerum dolor fuga
-      eaque asperiores nobis sapiente aliquam, natus eius quaerat deserunt ipsum
-      vitae esse cupiditate unde, autem cum. Eum obcaecati libero a possimus eos
-      assumenda quo consequatur vel ea eveniet sit, aliquam magni quasi fugiat
-      cupiditate voluptatum veritatis temporibus tempora adipisci exercitationem
-      voluptate aliquid officiis sunt. Doloremque facilis, nulla quo ab tempora
-      dolorem omnis voluptatibus rerum alias quis temporibus velit unde
-      excepturi natus, eius culpa ipsam? Corrupti quibusdam placeat ex quis
-      commodi, ducimus obcaecati odio eos nam saepe nobis, blanditiis laudantium
-      cumque iste fugiat perspiciatis aut cum magni aliquid magnam reprehenderit
-      possimus voluptatibus labore. Repellendus ex deserunt odio doloremque
-      accusamus quod voluptatum placeat commodi officia consequuntur aliquam
-      corrupti voluptatibus, quisquam, ut dicta blanditiis rem enim. Explicabo
-      atque recusandae sit, libero exercitationem corrupti similique nemo vitae
-      itaque, ratione repellendus dolorem. Eum, asperiores? Dolorum at quam
-      eaque laboriosam esse dignissimos commodi necessitatibus modi. Corporis ex
-      laboriosam cupiditate fugit cumque esse ad? Blanditiis numquam enim
-      tempora nisi vel sint voluptate delectus aut ipsum doloribus asperiores
-      laboriosam iste eos, eligendi repellat neque architecto quos harum velit
-      pariatur tempore corporis animi, iusto laudantium? Alias dolores, fugiat
-      distinctio nostrum reiciendis labore at esse veniam necessitatibus sint
-      dolore quae corporis ab consequuntur, ipsam impedit exercitationem
-      temporibus sed amet dolor aliquam? Temporibus eum maxime itaque illo
-      aperiam corporis magni, et rem! Corrupti totam necessitatibus aliquam
-      laudantium hic! Cum repellat earum ipsam odit, qui rem vitae labore
-      mollitia, reprehenderit minima nesciunt quidem dolorum possimus commodi.
-      Provident omnis doloribus quidem.
-    </div>
-  );
-};
+    <div className='mx-10 flex flex-col justify-center items-center gap-10'>
+      <p className='text-center text-[44px] font-bold'>My Creative <span className='text-[#313bac]'>Portfolio</span> Section</p>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-16 w-full '>
+        {projectsData.map(obj => (
+          <div key={obj.key} className='relative flex flex-col md:justify-start  gap-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-blue-300 duration-300 shadow-blue-200 w-[300px] md:w-[400px] h-[560px] hover:scale-105 '>
 
-export default Projects;
+            <Image src={obj.image} alt={obj.projectName} width={1902} height={1080} className='w-full h-auto rounded-2xl border shadow-xl' />
+
+            <p className='px-6 text-[18px] font-medium text-slate-700'>{obj.projectName}</p>
+            <p className='px-6 text-slate-800 text-justify'>{obj.description}</p>
+            <div className='flex justify-center items-center gap-10 pt-2'>
+              <Link href={obj.liveURL} className='px-4 py-2 font-bold active:text-white rounded-lg outline outline-offset-4 hover:outline-offset-0 outline-blue-500 bg-blue-500 active:outline-rose-600 active:bg-rose-600' >Live</Link>
+              <Link href={obj.githubURL} className='px-4 py-2 font-bold active:text-white rounded-lg outline outline-offset-4 hover:outline-offset-0 outline-green-500 bg-green-500 active:outline-rose-600 active:bg-rose-600'>Code</Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+
+
+export default Projects

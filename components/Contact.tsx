@@ -1,60 +1,96 @@
+"use client";
 import React from "react";
-
+import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import Links from "./Links";
+import Link from "next/link";
 const Contact = () => {
+  const handleSubmit = async (e: any) => {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycby4fy1BIQ54MO1d8UQD_EtTE3z2BSaeeemqqJ7lOHh1E23phy8LkfD4OMtxmUVN2e6_zQ/exec";
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(e.target),
+      });
+
+      if (response.ok) {
+        console.log("Success!", response);
+      } else {
+        console.error("Error!", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error!", error);
+    }
+  };
   return (
-    <div id="contact" className="">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea
-      atque placeat nihil excepturi maiores ut aliquid deserunt, iure dicta ad
-      eaque, suscipit in quidem quos sapiente similique a, corporis consequatur
-      est? Consectetur iusto aliquid esse tenetur id. Libero labore, dolorum
-      officiis iure consequuntur, tenetur illum saepe exercitationem eveniet
-      incidunt non iste velit a quaerat dolorem quibusdam aut nihil. Animi
-      voluptatibus tempore in, deserunt quo ipsa reiciendis non rem dolorum
-      cumque sit qui est culpa itaque, nemo explicabo! Rem sint consectetur
-      inventore provident fugiat est culpa dignissimos quasi quae quidem tenetur
-      nihil quam cupiditate et mollitia hic eius eos eaque dolores, blanditiis
-      at assumenda sapiente labore? Quas, architecto exercitationem? Et impedit
-      quibusdam porro, quia eligendi, atque quidem iste suscipit deleniti iusto
-      accusamus, possimus quisquam! Placeat nobis quam vel voluptatem
-      temporibus? Quia facere eligendi dolores delectus tenetur! Necessitatibus
-      labore nesciunt laborum voluptas excepturi fuga non dolor, minus dolores,
-      sint nihil eius temporibus explicabo distinctio voluptatem soluta vitae
-      earum doloribus eaque architecto odit ea? Asperiores cumque eligendi sequi
-      at magni tempore laborum, repudiandae quos repellat ut soluta voluptas
-      neque maxime aut exercitationem dignissimos quaerat itaque ratione
-      numquam. Debitis delectus quibusdam ea non placeat ipsa labore, animi
-      quaerat enim. Quia eum, rerum saepe odit aut fugit molestiae placeat
-      laborum architecto, sed distinctio eveniet itaque quisquam asperiores
-      earum, atque consequatur. Molestiae ipsum, consequatur, quos doloremque
-      alias perspiciatis vitae odit ipsa ullam amet, ab dolor inventore optio
-      corrupti quibusdam nobis quis eveniet mollitia illum earum voluptatem
-      libero? Animi ad placeat deserunt facilis fugiat quia sapiente, doloremque
-      incidunt veritatis quod, dolore, expedita ut officia. Deserunt, enim
-      commodi? Officia voluptas numquam alias autem! Quam aperiam animi deserunt
-      voluptatum quia iure nihil dolorum magni tempore omnis facere alias,
-      inventore eveniet odit nam, iste quidem distinctio minus tempora nulla
-      nostrum a repellat magnam. Quos dignissimos reiciendis pariatur dicta. Cum
-      ipsum, alias tenetur quasi cumque possimus aliquam qui soluta natus
-      ratione maxime commodi blanditiis recusandae adipisci aliquid perferendis.
-      Optio blanditiis, quas fugiat placeat assumenda ducimus autem at suscipit
-      quasi, veniam minima distinctio consectetur eaque dolor modi officia?
-      Suscipit expedita perspiciatis omnis hic, minus vero eum tempore,
-      doloribus asperiores a consectetur quo sit optio, et maxime provident odit
-      dolorum distinctio possimus deserunt autem aut illum dolore minima.
-      Molestiae nesciunt alias, illum sint quae deserunt corrupti esse veritatis
-      recusandae est iure aperiam non exercitationem accusantium neque porro
-      iusto hic nihil excepturi, inventore libero. Illum delectus deleniti
-      ratione quidem, cupiditate accusantium rem error ad nulla quaerat
-      voluptate! Enim nam illum dolorem! Possimus et tempora mollitia nesciunt
-      debitis quis, molestias eum quia facere pariatur vero aliquam hic libero
-      delectus neque blanditiis minima placeat! Cum atque reiciendis facilis
-      quasi ut esse ea, odio suscipit adipisci non ipsam explicabo voluptates?
-      Inventore quasi fugiat quas voluptas corrupti fugit tempore itaque quia
-      veritatis, nemo dignissimos vero doloremque molestiae maxime hic minus
-      earum corporis provident vitae sit, adipisci dicta qui. Officia pariatur
-      alias ipsa culpa mollitia sed, facilis saepe eius obcaecati molestiae
-      voluptatibus aut ad nihil fuga consectetur, natus maiores corrupti porro
-      iusto at consequatur. Molestias molestiae fugit deserunt.
+    <div className="mx-10 ">
+      <p className="hidden md:block text-[44px] font-bold text-center ">
+        Now it’s your turn to do the{" "}
+        <span className="text-[#313bac]">Talking.</span>
+      </p>
+      <br className="hidden md:block" />
+      <div className="flex flex-col md:flex-row items-center justify-around md:w-full gap-16 md:gap-0">
+        <div className=" flex flex-col justify-center md:justify-start gap-6 md:gap-10 items-center w-full ">
+          <p className=" text-4xl font-semibold border-b-4 border-[#313bac] px-2 pb-2">
+            Contact Me
+          </p>
+
+          <div className=" space-y-2">
+            <div className="flex items-center space-x-5 justify-start">
+              <PhoneIcon className="  h-7 w-7 text-green-600" />
+              <p className="font-medium text-lg">+91 9896434478</p>
+            </div>
+
+            <div className="flex items-center space-x-5 justify-start">
+              <EnvelopeIcon className=" h-7 w-7 text-blue-500" />
+              <p className="font-medium text-lg">Jatinjamdagni13@gmail.com</p>
+            </div>
+          </div>
+          <Links />
+        </div>
+        <div className=" w-full space-y-4 ">
+          <form
+            onSubmit={handleSubmit}
+            name="submit-to-google-sheet"
+            className="flex flex-col space-y-4 w-full md:w-fit"
+          >
+            <input
+              type="text"
+              name="Name"
+              placeholder="Name"
+              required
+              className="contactfield"
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+              required
+              className="contactfield"
+            />
+            <input
+              type="tel"
+              name="Contact"
+              placeholder="Contact No."
+              required
+              className="contactfield"
+            />
+            <textarea
+              name="Message"
+              placeholder="Message"
+              rows={3}
+              className="contactfield"
+            />
+            <button
+              type="submit"
+              className="w-full md:w-full py-2 px-auto rounded-md bg-blue-700 text-white text-[20px] active:bg-blue-500 outline outline-offest-2 active:outline-offset-2"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
