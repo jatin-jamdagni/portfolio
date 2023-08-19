@@ -58,9 +58,11 @@ const Navbar = () => {
             {NavLinkData.map((obj) => (
               <li
                 key={obj.key}
-                className="pl-10 border-none hover:border hover:border-dotted              "
+                className="pl-10 py-2 border border-dotted active:bg-slate-200            "
               >
-                <a href={obj.link}>{obj.id}</a>
+                <a href={obj.link} className="">
+                  {obj.id}
+                </a>
               </li>
             ))}
           </ul>
