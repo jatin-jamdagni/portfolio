@@ -7,7 +7,24 @@
   padding: 0;
   box-sizing: border-box;
   font-size: Syyyyyy;
-  
+ 
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: white; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
 }
 
 .contactfield {

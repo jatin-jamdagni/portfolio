@@ -7,7 +7,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth">
+    <div className=" scroll-smooth">
       <div id="home" className="pt-24 pb-14 bg-slate-100">
         <IntroBox />
       </div>
