@@ -52,7 +52,6 @@ const Contact = () => {
         <div className=" w-full space-y-4 ">
           <form
             onSubmit={handleSubmit}
-            name="submit-to-google-sheet"
             className="flex flex-col space-y-4 w-full md:w-fit"
           >
             <input
@@ -75,6 +74,8 @@ const Contact = () => {
               placeholder="Contact No."
               required
               className="contactfield"
+              minLength={10}
+              maxLength={10}
             />
             <textarea
               name="Message"
