@@ -11,9 +11,11 @@ export default function Home() {
       <div id="home" className="pt-24 pb-14 bg-slate-100">
         <IntroBox />
       </div>
+
       <div id="about" className="pt-24 pb-14">
         <About />
       </div>
+
       <div id="skills" className="pt-24 pb-14 bg-slate-100">
         <Skills />
       </div>
