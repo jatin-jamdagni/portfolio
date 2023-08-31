@@ -46,7 +46,7 @@ const About = () => {
             <span className="w-2 h-2 rounded-full bg-blue-700 mx-2"></span>
             DCRUST
             <span className="w-2 h-2 rounded-full bg-blue-700 mx-2"></span>
-            CGPA: 8.41
+            CGPA: 7.71
           </span>
         </p>
       </div>
