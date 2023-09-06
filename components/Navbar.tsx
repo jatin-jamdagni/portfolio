@@ -34,11 +34,11 @@ const Navbar = () => {
     <div className="border fixed top-0 z-50 w-full bg-opacity-50 backdrop-filter backdrop-blur-md">
       <div className="flex px-6 py-3 justify-between md:justify-around">
         <Image
-          src={"/logo.svg"}
+          src={"/logo-png.png"}
           alt="logo"
-          height={120}
-          width={120}
-          className="scale-150 outline hover:outline-offset-4 mix-blend-multiply
+          height={669}
+          width={2000}
+          className=" h-10 w-auto scale-150 outline hover:outline-offset-4 mix-blend-multiply
 
 "
         />
@@ -48,22 +48,33 @@ const Navbar = () => {
             setOpen(!open);
           }}
         >
-          {open ? <RxCross2 /> : <RxHamburgerMenu />}
+          {open ? (
+            <RxCross2 className=" font-extrabold text-red-500 duration-300" />
+          ) : (
+            <RxHamburgerMenu className=" font-extrabold text-blue-800 duration-300" />
+          )}
         </button>
         <NavLinks />
       </div>
       {open ? (
-        <div className="block md:hidden">
-          <ul onClick={() => setOpen(!open)} className="">
+        <div className="block md:hidden transition-all ease-in-out">
+          <ul onClick={() => setOpen(!open)} className=" flex flex-col">
             {NavLinkData.map((obj) => (
-              <li
+              <Link
                 key={obj.key}
-                className="pl-10 py-2 border border-dotted active:bg-slate-200            "
+                href={obj.link}
+                className="pl-10 py-2 border border-dotted active:bg-slate-200"
               >
-                <a href={obj.link} className="">
-                  {obj.id}
-                </a>
-              </li>
+                {obj.id}
+              </Link>
+              // <li
+              //   key={obj.key}
+              //   className="pl-10 py-2 border border-dotted active:bg-slate-200            "
+              // >
+              //   <a href={obj.link} className=" w-screen">
+              //     {obj.id}
+              //   </a>
+              // </li>
             ))}
           </ul>
         </div>
