@@ -27,7 +27,13 @@ const skillsData = [
 const experinceData = [
   {
     key: 1,
-    date: "Feb 2023 - May 2023",
+    date: "Oct, 2023 - Present",
+    post: "Frontend Developer Intern",
+    company: "FuelBuddy",
+  },
+  {
+    key: 2,
+    date: "Feb, 2023 - May, 2023",
     post: "React Developer Intern",
     company: "Mercados Energy Market India Pvt. Ltd.",
   },
@@ -54,11 +60,11 @@ const Skills = () => {
               className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 border-rose-50 border p-4 rounded-xl shadow-lg hover:shadow-md shadow-blue-300 hover:shadow-blue-300"
             >
               <p className="text-[16px] font-bold text-[#313aaa]">{obj.date}</p>
-              <div className="flex flex-col gap-2">
-                <p className=" text-[24px] font-medium text-center text-slate-800 hover:scale-105 duration-200">
+              <div className="flex flex-col gap-2 justify-center items-center">
+                <p className=" text-[24px] font-medium text-center text-black hover:scale-105 duration-200">
                   {obj.post}
                 </p>
-                <p>{obj.company}</p>
+                <p className=" text-blue-900 font-bold">{obj.company}</p>
               </div>
             </div>
           ))}
