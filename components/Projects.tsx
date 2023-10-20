@@ -69,7 +69,7 @@ const Projects = () => {
               alt={obj.projectName}
               width={1902}
               height={1080}
-              className="w-full h-auto rounded-2xl border shadow-xl"
+              className="w-full h-auto rounded-2xl border shadow-xl shadow-blue-100"
             />
 
             <p className="px-6 text-[18px] font-medium text-slate-700">
