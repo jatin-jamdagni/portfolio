@@ -29,7 +29,7 @@ const IntroBox = () => {
                 className="text-gray-600 md:text-[32px]"
                 target="_blank"
                 href={
-                  "https://drive.google.com/file/d/1e3Hp00QFL9B13QoJj9xM0jBlAl2SAsK-/view?usp=sharing"
+                  "https://drive.google.com/file/d/1nZzPJPmutIjBSlgBfN_fzr5W1NqlNbmf/view?usp=sharing"
                 }
               >
                 Resume
