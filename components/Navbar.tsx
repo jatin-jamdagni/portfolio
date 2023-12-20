@@ -18,7 +18,7 @@ const NavLinks = () => {
       {NavLinkData.map((obj) => (
         <li
           key={obj.key}
-          className="transition-opacity hover:opacity-100 opacity-80 uppercase text-[14px] flex items-center"
+          className="transition-opacity hover:opacity-100 opacity-70 uppercase text-[14px] font-semibold flex items-center"
         >
           <a href={obj.link}>{obj.id}</a>
         </li>
@@ -38,7 +38,7 @@ const Navbar = () => {
           alt="logo"
           height={669}
           width={2000}
-          className=" h-10 w-auto scale-150 outline hover:outline-offset-4 mix-blend-multiply
+          className=" h-10 w-auto scale-150 outline hover:outline-offset-4 mix-blend-multiply opacity-100 hover:opacity-80 duration-300
 
 "
         />
@@ -63,7 +63,7 @@ const Navbar = () => {
               <Link
                 key={obj.key}
                 href={obj.link}
-                className="pl-10 py-2 border border-dotted active:bg-slate-200"
+                className="pl-10 py-2 border border-dotted active:bg-slate-200 font-semibold"
               >
                 {obj.id}
               </Link>

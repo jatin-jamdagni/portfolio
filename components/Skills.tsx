@@ -57,7 +57,7 @@ const Skills = () => {
           {experinceData.map((obj) => (
             <div
               key={obj.key}
-              className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 border-rose-50 border p-4 rounded-xl shadow-lg hover:shadow-md shadow-blue-300 hover:shadow-blue-300"
+              className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 border-rose-50 border p-4 rounded-xl shadow-lg hover:shadow-md duration-200 shadow-blue-300 hover:shadow-blue-300"
             >
               <p className="text-[16px] font-bold text-[#313aaa]">{obj.date}</p>
               <div className="flex flex-col gap-2 justify-center items-center">

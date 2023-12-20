@@ -58,7 +58,7 @@ const Projects = () => {
       <p className="text-center text-[44px] font-bold">
         My Creative <span className="text-[#313bac]">Portfolio</span> Section
       </p>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-16 w-full ">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-16 w-full  flex-wrap">
         {projectsData.map((obj) => (
           <div
             key={obj.key}
@@ -81,13 +81,13 @@ const Projects = () => {
             <div className="flex justify-center items-center gap-10 pt-2">
               <Link
                 href={obj.liveURL}
-                className="px-4 py-2 font-bold active:text-white rounded-lg outline outline-offset-4 hover:outline-offset-0 outline-blue-500 bg-blue-500 active:outline-rose-600 active:bg-rose-600"
+                className="px-4 py-2 font-bold active:text-white rounded-lg outline outline-offset-4 hover:outline-offset-0 outline-blue-500 bg-blue-500 active:outline-rose-600 active:bg-rose-600 duration-200"
               >
                 Live
               </Link>
               <Link
                 href={obj.githubURL}
-                className="px-4 py-2 font-bold active:text-white rounded-lg outline outline-offset-4 hover:outline-offset-0 outline-green-500 bg-green-500 active:outline-rose-600 active:bg-rose-600"
+                className="px-4 py-2 font-bold active:text-white rounded-lg outline outline-offset-4 hover:outline-offset-0 outline-green-500 bg-green-500 active:outline-rose-600 active:bg-rose-600 duration-200"
               >
                 Code
               </Link>

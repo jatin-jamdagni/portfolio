@@ -26,8 +26,7 @@ const Contact = () => {
   return (
     <div className="mx-10 ">
       <p className="hidden md:block text-[44px] font-bold text-center ">
-        Now it’s your turn to do the{" "}
-        <span className="text-[#313bac]">Talking.</span>
+        Leave your <span className="text-[#313bac]">Message</span>.
       </p>
       <br className="hidden md:block" />
       <div className="flex flex-col md:flex-row items-center justify-around md:w-full gap-16 md:gap-0">

@@ -20,7 +20,10 @@ export default function Home() {
         <Skills />
       </div>
 
-      <div id="projects" className="pt-24 pb-14">
+      <div
+        id="projects"
+        className="pt-24 pb-14 h-auto flex flex-wrap justify-center items-center"
+      >
         <Projects />
       </div>
 
