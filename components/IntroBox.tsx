@@ -24,17 +24,15 @@ const IntroBox = () => {
             </p>
           </div>
           <div className='shadow-lg hover:shadow-2xl ml-6 bg-gray-50 px-8 py-6 rounded-lg font-["Dm_sans"] flex gap-4 items-center w-full'>
-            <div className="rounded-full duration-200 p-6 py-8 flex justify-center shadow-blue-200 items-center shadow-2xl hover:shadow-sm active:shadow-sm text-black hover:text-[#313bac] ">
-              <Link
-                className=" md:text-[32px] "
-                target="_blank"
-                href={
-                  "https://drive.google.com/file/d/1mISIRZyhbSKYkg54Okp0kr66iKUDaL3I/view?usp=sharing"
-                }
-              >
-                Resume
-              </Link>
-            </div>
+            <Link
+              target="_blank"
+              href={
+                "https://drive.google.com/file/d/1mISIRZyhbSKYkg54Okp0kr66iKUDaL3I/view?usp=sharing"
+              }
+              className="rounded-full duration-200 p-6 py-8 flex justify-center shadow-blue-200 items-center shadow-2xl hover:shadow-sm active:shadow-sm text-black hover:text-[#313bac] "
+            >
+              <p className="md:text-[32px] ">Resume</p>
+            </Link>
             <p className="text-[16px] uppercase text-right text-gray-800 hover:text-black">
               MERN Stack Dev
               <br />
