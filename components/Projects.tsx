@@ -30,6 +30,15 @@ const projectsData = [
     liveURL: "https://pallavidwivedi1605.github.io/MIGRATERS/",
     githubURL: "https://github.com/jatin-jamdagni/MIGRATERS",
   },
+  {
+    key: 4,
+    projectName: "E-Shop: E-commerce Website",
+    image: "/e-shop.png",
+    description:
+      "'E-shop' is a E-commerce website designed using Vue3.js Composition api, firebase emailpassword Authentication, TypeScript and Pinia Store to manage state. Basically E-shop have Cart functionality, Buying item and with filtered search functionality not only this your can get your Order Details in your account info section after success login.",
+    liveURL: "https://e-commerce-jatin.vercel.app/",
+    githubURL: "https://github.com/jatin-jamdagni/E-Commerce",
+  },
 ];
 
 // const Projects = () => {
