@@ -84,7 +84,7 @@ const Projects = () => {
             <p className="px-6 text-[18px] font-medium text-slate-700">
               {obj.projectName}
             </p>
-            <p className="px-6 text-slate-800 text-justify">
+            <p className="px-6 text-slate-800 text-justify overflow-auto">
               {obj.description}
             </p>
             <div className="flex justify-center items-center gap-10 pt-2">
