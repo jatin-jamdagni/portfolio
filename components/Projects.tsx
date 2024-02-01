@@ -5,12 +5,12 @@ import React from "react";
 const projectsData = [
   {
     key: 1,
-    projectName: "Project Shop",
-    image: "/projectshop.png",
+    projectName: "E-Shop",
+    image: "/e-shop.png",
     description:
-      "The Project is a cutting-edge web application developed using Reactjs, Next.js 13, Tailwind CSS, TypeScript, and GraphQL. It provides users with a seamless experience for managing and showcasing their projects, while maintaining a user-friendly interface and robust functionality.",
-    liveURL: "https://project-shop-theta.vercel.app/",
-    githubURL: "https://github.com/jatin-jamdagni/Project_shop",
+      "'E-shop' is a E-commerce website designed using Vue3.js Composition api, firebase Authentication, TypeScript and Pinia Store. Basically E-shop have Cart functionality, Buying item and with filtered search functionality and get your Order Details in your account info section after success login.",
+    liveURL: "https://e-commerce-jatin.vercel.app/",
+    githubURL: "https://github.com/jatin-jamdagni/E-Commerce",
   },
   {
     key: 2,
@@ -32,12 +32,12 @@ const projectsData = [
   },
   {
     key: 4,
-    projectName: "E-Shop",
-    image: "/e-shop.png",
+    projectName: "Project Shop",
+    image: "/projectshop.png",
     description:
-      "'E-shop' is a E-commerce website designed using Vue3.js Composition api, firebase Authentication, TypeScript and Pinia Store. Basically E-shop have Cart functionality, Buying item and with filtered search functionality and get your Order Details in your account info section after success login.",
-    liveURL: "https://e-commerce-jatin.vercel.app/",
-    githubURL: "https://github.com/jatin-jamdagni/E-Commerce",
+      "The Project is a cutting-edge web application developed using Reactjs, Next.js 13, Tailwind CSS, TypeScript, and GraphQL. It provides users with a seamless experience for managing and showcasing their projects, while maintaining a user-friendly interface and robust functionality.",
+    liveURL: "https://project-shop-theta.vercel.app/",
+    githubURL: "https://github.com/jatin-jamdagni/Project_shop",
   },
 ];
 
