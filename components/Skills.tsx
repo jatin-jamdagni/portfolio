@@ -24,15 +24,21 @@ const skillsData = [
   { key: 18, image: "/mui.jpg", name: "Material UI" },
 ];
 
-const experinceData = [
+const experienceData = [
   {
     key: 1,
-    date: "Oct, 2023 - Present",
-    post: "Frontend Developer Intern",
-    company: "FuelBuddy",
+    date: "Jan, 2024 - Present",
+    post: "Frontend Developer",
+    company: "AWL India",
   },
   {
     key: 2,
+    date: "Oct, 2023 - Jan, 2024",
+    post: "Tech Trainee",
+    company: "FuelBuddy",
+  },
+  {
+    key: 3,
     date: "Feb, 2023 - May, 2023",
     post: "React Developer Intern",
     company: "Mercados Energy Market India Pvt. Ltd.",
@@ -54,7 +60,7 @@ const Skills = () => {
       </p>
       <div className="flex flex-col md:flex-row justify-around items-centers gap-10">
         <div className="flex flex-col gap-6 w-full items-center py-6 md:p-12  ">
-          {experinceData.map((obj) => (
+          {experienceData.map((obj) => (
             <div
               key={obj.key}
               className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 border-rose-50 border p-4 rounded-xl shadow-lg hover:shadow-md duration-200 shadow-blue-300 hover:shadow-blue-300"
