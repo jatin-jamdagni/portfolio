@@ -34,7 +34,7 @@ const IntroBox = () => {
               <p className="md:text-[32px] ">Resume</p>
             </Link>
             <p className="text-[16px] uppercase text-right text-gray-800 hover:text-black">
-              MERN Stack Dev
+              Full Stack Dev
               <br />
               Mobile App Dev
             </p>
