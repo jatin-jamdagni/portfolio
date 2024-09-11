@@ -27,7 +27,7 @@ const IntroBox = () => {
             <Link
               target="_blank"
               href={
-                "https://drive.google.com/file/d/1mISIRZyhbSKYkg54Okp0kr66iKUDaL3I/view?usp=sharing"
+                "https://drive.google.com/file/d/1uLFRGiOijWEs88IdUkmw0sjSxNAoSjP4/view?usp=sharing"
               }
               className="rounded-full duration-200 p-6 py-8 flex justify-center shadow-blue-200 items-center shadow-2xl hover:shadow-sm active:shadow-sm text-black hover:text-[#313bac] "
             >
