@@ -1,40 +1,27 @@
-import type { Metadata } from "next";
-import { Fira_Mono, Fira_Sans } from "next/font/google";
+import type React from "react";
 import "./globals.css";
-import SnowflakeCursor from "@/components/SnowCursor";
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 
-const firaSans = Fira_Sans({
-  weight: "500",
+const poppins = Poppins({
   subsets: ["latin"],
-});
-
-const firaMono = Fira_Mono({
-  weight: "500",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "Hi, I'm Jatin Sharma",
-  description: "Frontend Developer....",
+  title: "Jatin Sharma",
+  description: "Jatin Sharma",
+  keywords: ["Jatin", "Frontend", "FrontendDeveoper", "React", "Vue"],
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${firaMono.className} ${firaSans.className}  antialiased`}
-      >
-        <div className=" h-screen overflow-hidden bg-[#1D1616] ">
-          <SnowflakeCursor />
-
-          {children}
-
-        </div>
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
