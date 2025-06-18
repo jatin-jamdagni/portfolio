@@ -5,23 +5,8 @@ import { motion } from "framer-motion"
 export default function Coursework() {
   const coursework = {
     GRADUATE: [
-      "Advanced Machine Learning",
-      "Open Source Software Engineering",
-      "Advanced Interactive Graphics",
-      "Compilers + Practicum",
-      "Cloud Computing",
-      "Evolutionary Computation",
-      "Defending Computer Networks",
-      "Machine Learning",
-    ],
-    UNDERGRADUATE: [
-      "Information Retrieval",
-      "Operating Systems",
-      "Artificial Intelligence + Practicum",
-      "Functional Programming",
-      "Computer Graphics + Practicum (Research Asst. & Teaching Asst 2x)",
-      "Unix Tools and Scripting",
-    ],
+    "Computer Science ane Engineering"
+    ]
   }
 
   return (

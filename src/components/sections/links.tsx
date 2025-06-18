@@ -1,16 +1,16 @@
 // "use client"
 
 // import { motion } from "framer-motion"
+// import { BsGithub, BsTwitter } from "react-icons/bs"
+// // import { FaFacebook } from "react-icons/fa"
+// import { LiaLinkedinIn } from "react-icons/lia"
  
 // export default function Links() {
 //   const links = [
-//     { name: "Facebook://dd", icon: <Facebook className="h-4 w-4" /> },
-//     { name: "Github://deedydas", icon: <Github className="h-4 w-4" /> },
-//     { name: "LinkedIn://debarghyadas", icon: <Linkedin className="h-4 w-4" /> },
-//     { name: "YouTube://DeedyDash007", icon: <Youtube className="h-4 w-4" /> },
-//     { name: "Twitter://@debarghya_das", icon: <Twitter className="h-4 w-4" /> },
-//     { name: "Quora://Debarghya-Das", icon: null },
-//   ]
+ //     { name: "Github://jatin-jamdagni", icon: <BsGithub className="h-4 w-4" /> },
+//     { name: "LinkedIn://jatinjamdagni", icon: <LiaLinkedinIn className="h-4 w-4" /> },
+ //     { name: "Twitter://", icon: <BsTwitter className="h-4 w-4" /> },
+ //   ]
 
 //   return (
 //     <div>

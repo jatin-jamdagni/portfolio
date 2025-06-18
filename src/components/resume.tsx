@@ -8,10 +8,9 @@ import Education from "./sections/education";
 import Coursework from "./sections/course-work";
 import Skills from "./sections/skills";
 import Experience from "./sections/experience";
-import Research from "./sections/research";
-// import { Award } from "lucide-react";
-import Publications from "./sections/publications";
-import Awards from "./sections/awards";
+// import Research from "./sections/research";
+//  import Publications from "./sections/publications";
+// import Awards from "./sections/awards";
 import { BackgroundGradient } from "./bg-radiant";
 
 export default function Resume() {
@@ -80,15 +79,15 @@ export default function Resume() {
               </motion.div>
 
               <motion.div variants={itemVariants} className="mt-6">
-                <Research />
+                {/* <Research /> */}
               </motion.div>
 
               <motion.div variants={itemVariants} className="mt-6">
-                <Awards />
+                {/* <Awards /> */}
               </motion.div>
 
               <motion.div variants={itemVariants} className="mt-6">
-                <Publications />
+                {/* <Publications /> */}
               </motion.div>
             </div>
           </div>
