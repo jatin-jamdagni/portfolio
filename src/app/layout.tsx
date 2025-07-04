@@ -26,9 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` monospace border border-gray-800 mx-auto flex min-h-screen max-w-4xl flex-col bg-bgColor px-4 pt-16 font-mono text-sm font-normal text-textColor antialiased sm:px-8 scroll-smooth `}
+        className={` monospace   mx-auto flex min-h-screen max-w-4xl flex-col   px-4 font-mono text-sm font-normal text-textColor antialiased sm:px-8 scroll-smooth `}
       >
-      <Header />
+        <Header />
 
         {children}
       </body>
